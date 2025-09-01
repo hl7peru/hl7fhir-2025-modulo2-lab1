@@ -1,4 +1,4 @@
-# Respuestas - Juan Pérez
+# Respuestas - Sandra Portocarrero
 
 ## ¿Qué información devuelve el servidor?
 _Se obtiene la respuesta del servidor la cual es un jason de 826 lineas de codigo, donde obervamos informacion del recurso pacientes 
