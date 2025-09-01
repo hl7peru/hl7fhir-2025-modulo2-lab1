@@ -1,0 +1,36 @@
+# Respuestas - Diego Valdera
+
+## ¿Qué información devuelve el servidor?
+#   El servidor devuelve una respuesta 200 OK. junto a ello un formato json
+#	resourceType: "Bundle" — Indica que la respuesta agrupa varios recursos.
+#	id — Identificador del Bundle.
+#	meta{lastUpdated} — Fecha y hora de generación de la respuesta.
+#	type = "searchset" — Es una búsqueda que devuelve múltiples entradas.
+#	link — Contiene enlaces de navegación, como self y next (paginación).
+#	entry — Lista de elementos, donde cada elemento representa un recurso Patient que coincide con la búsqueda.
+#   Dentro de entry para cada paciente encontramos:
+#	fullUrl — URL completa del recurso Patient específico.
+#	resource — Objeto que contiene los datos del paciente.
+#	search.mode — Indica cómo se encontró el recurso (ej. "match").
+
+########################################################################################################################################
+## ¿Qué campos del recurso Patient se observan?
+#   Los recursos Patient incluyen los siguientes campos:
+#	resourceType: Patient
+#	id — Identificador único del paciente.
+#	meta — Información de metadatos:
+#	meta{versionId} — Versión del recurso.
+#	meta{lastUpdated} — Fecha de última actualización.
+#	meta{source}: source, security, tag.
+#	text — Representación HTML generada, con status ("generated") y bloque div (HTML). 
+#	identifier — Arreglo de identificadores (cada uno con posibles sub-campos como type.coding.system, type.coding.code, value). 
+#	name — Arreglo con nombres del paciente, que incluye campos como:
+#	name{family} (apellido)
+#	name{given} (lista de nombres)
+#   birthDate — Fecha de nacimiento. 
+#   address: Información como use, text, line, city, state, postalCode
+#   search: mode
+#	telecom (presente en algunos recursos) — Datos de contacto:
+#	telecom: system, value, use
+
+
